@@ -18,6 +18,7 @@ import { toast } from "sonner";
 import Loading from "@/components/loading";
 import { SettingCardMultiInputCollapse } from "@/components/admin/SettingCardMultiInput";
 import { formatBytes } from "@/utils/unitHelper";
+import VersionUpgrade from "@/components/admin/VersionUpgrade";
 export default function GeneralSettings() {
   const { t } = useTranslation();
   const { settings, loading, error } = useSettings();
@@ -58,6 +59,7 @@ export default function GeneralSettings() {
       <SettingCardLabel>
         {t("settings.general.auto_discovery")}
       </SettingCardLabel>
+      <VersionUpgrade />
       <ApiCard settings={settings} />
       <label className="text-xl font-bold">{t("settings.geoip.title")}</label>
       <SettingCardSwitch
