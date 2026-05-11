@@ -59,6 +59,15 @@ export default function GeneralSettings() {
       <SettingCardLabel>
         {t("settings.general.auto_discovery")}
       </SettingCardLabel>
+      <SettingCardShortTextInput
+        title={t("settings.upgrade.repo", { defaultValue: "升级仓库" })}
+        description={t("settings.upgrade.repo_description", { defaultValue: "GitHub 仓库地址，格式：owner/repo，默认为 komari-monitor/komari" })}
+        defaultValue={settings.upgrade_repo || ""}
+        placeholder="LuAlvin/komari"
+        OnSave={async (value) => {
+          await updateSettingsWithToast({ upgrade_repo: value }, t);
+        }}
+      />
       <VersionUpgrade />
       <ApiCard settings={settings} />
       <label className="text-xl font-bold">{t("settings.geoip.title")}</label>
