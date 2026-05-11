@@ -506,6 +506,7 @@
     },
     "general": {
       "auto_discovery": "自动发现",
+      "auto_discovery_description": "启用后允许客户端自动注册到服务器",
       "auto_discovery_key": "自动发现密钥",
       "auto_discovery_key_description": "使用自动发现可以批量注册客户端，留空表示禁用自动发现。",
       "title": "通用"

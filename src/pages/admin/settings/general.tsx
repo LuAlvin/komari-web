@@ -56,9 +56,14 @@ export default function GeneralSettings() {
 
   return (
     <>
-      <SettingCardLabel>
-        {t("settings.general.auto_discovery")}
-      </SettingCardLabel>
+      <SettingCardSwitch
+        title={t("settings.general.auto_discovery")}
+        description={t("settings.general.auto_discovery_description")}
+        defaultChecked={settings.auto_discovery_enabled}
+        onChange={async (checked) => {
+          await updateSettingsWithToast({ auto_discovery_enabled: checked }, t);
+        }}
+      />
       <SettingCardShortTextInput
         title={t("settings.upgrade.repo", { defaultValue: "升级仓库" })}
         description={t("settings.upgrade.repo_description", { defaultValue: "GitHub 仓库地址，格式：owner/repo，默认为 komari-monitor/komari" })}

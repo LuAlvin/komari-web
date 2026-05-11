@@ -506,6 +506,7 @@
     },
     "general": {
       "auto_discovery": "自動検出",
+      "auto_discovery_description": "有効にすると、クライアントがサーバーに自動登録できるようになります",
       "auto_discovery_key": "自動検出キー",
       "auto_discovery_key_description": "自動検出を使用すると、クライアントを一括登録できます。空白の場合、自動検出は無効になります。",
       "title": "一般"

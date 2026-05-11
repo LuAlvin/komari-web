@@ -506,6 +506,7 @@
     },
     "general": {
       "auto_discovery": "自動發現",
+      "auto_discovery_description": "啟用後允許客戶端自動註冊到伺服器",
       "auto_discovery_key": "自動發現密鑰",
       "auto_discovery_key_description": "使用自動發現可以批量註冊客戶端，留空表示禁用自動發現。",
       "title": "通用"

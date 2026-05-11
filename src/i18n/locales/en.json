@@ -506,6 +506,7 @@
     },
     "general": {
       "auto_discovery": "Auto discovery",
+      "auto_discovery_description": "Enable to allow clients to auto-register to the server",
       "auto_discovery_key": "Auto discovery key",
       "auto_discovery_key_description": "Use automatic discovery to register clients in bulk. Leave blank to disable automatic discovery.",
       "title": "General"
